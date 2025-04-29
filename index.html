@@ -1,163 +1,388 @@
 <!DOCTYPE html>
-<html lang="fr">
-
+<html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Mon Portfolio</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
-        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="portfo2.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <title>Coffe Shop</title>
+    <style>
+     #box {
+    width: 100rem;
+    height: 38rem;
+    background-image: url('/Coffe/90.jpg'); /* Image de fond par défaut */
+    background-size: cover; /* Ajuste l'image pour couvrir toute la boîte */
+    background-position: center; /* Centre l'image */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 2rem;
+    margin-left: 100px;
+    margin-right: 100px;
+    border-radius: 10px;
+     
+}
+ 
+#box h2 {
+    color: white; /* Couleur du texte */
+}
+      #box h2 {
+        color: white;
+      }
+    </style>
 
-    <script defer src="portfo2.js"></script>
 </head>
-
 <body>
-  <header>
-    <div class="logo">Ahlam</div>
-        <div class="nav-links">
-          <a href="#service">SERVICES</a>
-          <a href="#technologie">TECHNOLOGIES</a>
-          <a href="#portfolio">PORTFOLIO</a>
-          <a href="#contact">CONTACT</a>
-    </div>
-</header>
+  <div class="blur-background"></div>
+  <div class="form-container">
+  <div class="home">
+  <div class="navbar">
+  <div class="logo">
+   <img src="./OIP-removebg-preview.png" width="100px">
+       
+  </div>  
+  
+  <div class="list">
+    <ul>
+     <li><a href="#accueil">Accueil</a></li>
+     <li><a href="#menu">Menu</a></li>
+     <li><a href="#a propos">A propos</a></li>
+     <li><a href="#gallery">Gallery</a></li>
+     <li><a href="#ourservices">Our Services</a></li>
 
-  <section class="hero">
-    <div class="hero-content">
-          <h3>FRONTEND<br>DEVELOPER</h3>
-          <p>I am Ahlam – with a passion for creating beautiful and responsive websites.</p>
-          <a href="#" class="btn">HTML</a>
-          <a href="#" class="btn">CSS</a>
-          <a href="#" class="btn">JAVA SCRIPT</a>
-    <div class="Bouton">
-          <a href="#" class="btn">VIEW MY WORK</a>
-    </div>
-    </div>
-    <div class="hero-image">
-      <img src="" alt="">
-    </div>
-   </section>
-    <!-- Effets de lumière dynamiques -->
-    <div class="light-grid"></div>
+     <li><a href="#contact">Contact</a></li>
+    </ul>
+   </div>
+   </div>
 
-    <section class="elite-dark" id="service">
-        <div class="elite-title">
-            <h3>My Services</h3>
+      <div class="center">
+      <div class="left">
+       <section id="accueil"> 
+        <h1 class="coffee-title"> BIENVENUE CHEZ CHEMEX </h1>
         </div>
-
-   
-     <div class="elite-grid">
-       <div class="elite-card">
-       <div class="elite-icon">
-         <i class="fas fa-laptop-code"></i>
+        <div class="right">
+            <img src="/Coffe/chemex.png"alt="une belle image de café" class="image-style">
+        </div>
       </div>
-        <h3 class="elite-card-title">Website Development</h3>
-         <p class="elite-card-desc">
-                    Bespoke website development from your designs. I create responsive,
-                    high-performance websites that deliver seamless experiences across all devices.</p>
-                <a href="#" class="elite-link">
-                    View projects <i class="fas fa-arrow-right"></i>
-                </a>
+       </div>
+       </div>
+        </section>
+    
+       <section id="menu">
+        <div class="search">
+        <div class="search-box">
+          <input type="text" placeholder="search">
+          <button type="submit">search</button>
+        </div></div>
+        <div class="menu-items-container">
+          <!-- Item Café -->
+          <div class="menu-item">
+            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAf5JREFUSEu11UuojlEUBuDn5J5rJi4ppZAkwgDJiEIuEzHCQClSJigxFplSRBFyiYxQUpi5lELKNSkyklsmSviW9q+/z7e/fQzOqr/+c/ba6137Xe96/x59HD19XN//AAzD6vSZjgkYgW+4gEN4WG+4NwBDqiI7sBPDCy/ej93dOSWABbiEcS2FX+Aa7uAR4u9fnfw2gA0VDccxIFP8NjbhdTofg6mYgrt4Ev/PAazD+ZauT2AzJiWQNel758oZrM8BLMQt9M8A3MRi7Etz6deQ9zK95J8XxBCDw7GZ4t8rxUzDIpxseWEo648g6hQdTIrJ3b2ClRUtb5NMc3mfMLoOMBLvEHrPxZ5KUUfxoSDXx5hZB9iKw4WLwf1X3C/kHcGWOsCNNLy2uzGbJThdAFiK63WA4G1Uy8UY8GAcwK6WvDeYjB/dAAOrFY8CbXEKG9PWLmtJXIuLnfOOikoAP1NXg5KhRX5TXMWK7oNumb7PeM6Xau1jU2PB7mFupnhYxhx8zgHE4gQFnXiajO4YPlY+cy7tQFP9KDofz+qH3S8Ij5+H58moOp3Mqnwm+J+R6TxsYTleNZ3XN3loRUMMcHxyxlWFjT2b9B670RhNbroNYRkhyaYIrw+N760oe1BQXtauJ2I7ZiMoCrrC42PQl3thFX9xS79opQaL530O8BvFzFgZCSZ3ZQAAAABJRU5ErkJggg=="/> 
+            <h3>Coffee</h3>
+          </div>
+          
+          <!-- Item Gâteau -->
+          <div class="menu-item">
+            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAQZJREFUSEvd1bsuRFEUxvHfSGi0EolCovIKtDyAp1CplK6FS2IUGq3n0CgoeAFPQCWiVolLdqyT7GxnZM7MmcQ45cq3vv+67ZyOEX+dEftrCviMgvrO61sYxn8bkLrZxQZmB9zNM85xXOXnIzrD5oDGZdoh9lMwB7xgpiXAE+ZKQLXAlhjfxecdjD8gdbSCIywXc7qLC7uJ+Grolmp0e7iuu6IqNoHtMHyLk+uiHGGl28F7AH/o8h284gCnPcySUQJ/hNnJL9AtTPda8i0ucIWpGNs6ynHkukmkseW6f3hFI38Hj5hv6Rk/YKFc8hrSmS0OCblHuqLLEjCkb3160z9a4yLGH/AFi88yGX9tUxEAAAAASUVORK5CYII="/> 
+            <h3>cake</h3>
+          </div>
+          
+          <!-- Item Pâtisseries -->
+          <div class="menu-item">
+            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAbpJREFUSEu11U3IzUEUBvDfmw2FRJSErRIra7FR2FlIkZWwko9iw0JYkM8UWSuUlC0byZKyQ5KsJB9JSSlfc2ou8447//vvfbuzunf+5zzPzHnOeWbCmNfEmPGNIpiF9diAjViAZfjW92BdBGtxG4sqsDn4Ol2CIziFGUOAFuPddAjO4lAHQJCfmSrBGjwuki/iXCbcX+yfTHpcxicsxZsWYalBlOMpVhXBUf8PWIj3DZDPmN+HYB0eVIF7cQM7kthXOsoyOMh/IeUNDuN039pWcU1dSoI72NKDYJQuXzA76zNp0N4iWjDWBZzHQRyoSPvoElhLIq+8QTDPzWAh6seGuHtwE9txtXHjwJpXEzzHipywO/2+1UPcVkWfJRdYWRPEqbb10KBPyHXsrAmiFeNDvVqitvYjf2v2sUkahHO+yG5ZkrREbe2/xGp8r28Q/8OW7zWGrRZ1MITl/i/EwD4aYAyz66PJRU/0KfSQmH3Zo/5+ar0Hx1ILH6/auIvzZzbES3VQ14OzOQ3etcHAdKC/wq708j0cFjPqyZyZ7WNTFm45fqcWfI0nuI+7+NE6wCiCKUrxL23sBH8AWKlSGRGF1A8AAAAASUVORK5CYII="/>  
+            <h3>Dry sweets</h3>
+          </div>
+          
+      
+          <!-- Item Jus -->
+          <div class="menu-item">
+            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAUBJREFUSEvFlL1OQkEQhT86O6MGY2dpbaGCFYk9nYX/JjyFhULQ+BQ0gKixs7exMP7GB/ANMAKJDaUyyV68EmfvbOLV286Z+e7ZPTsZUv4yKc/HB8gDl0A24SdegSJw/5POB7gFckaHol0OAawAV8bhkawAXI/2jDr4CByqyYdz/xzwSwa+xvxbTLvARKAd6ZlKuuSo/gAsBAKkZ8kKOAXWAgHSs2EFVIF9J54EegpMah1Xk56yFbAN1J14EXhUAHIkd662BZxYAfLsb5x4HThTAJtA09Vkd0WwoVyL6TTQdqoD4FABVGLHIkvxzepAdH1gDGgAOwqgBYjDd2A8ZNmJ9nmwrueNSXrSYu17yRfAqhFwrsXaBzgG9oyAo1isv7X4ACWgZgTsxmJtBsy62M0YIHODy34JvWTD3GRJ6uv6Ezj0LRniS/32AAAAAElFTkSuQmCC"/>
+            <h3>Juices</h3>
+        </div>
+      
+          <!-- Item pastries -->
+          <div class="menu-item">
+            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAdtJREFUSEu11T3oTmEYx/HPn6IsyoJBChkUMXtLkSRlMFEWi4QMhLKKMHgJC4NBMipZ5DUZlJTBKuVtEMVgIJxf3c+/09M55zmP+l/L6XTu8/te131dv/ueMMUxMcX6/hewGBuxDMvxDVfwBL/rSY8LmIFTOIRpDdW/wSZ8HHwbF3AVe0ds63Oswd+s6wuYh9mV+Gc8xsoRkO240xcwF8lqFtbia4Fk79viUrXuYF/AHlwrSqlgPb5Uz0dY0UK4hZ2jAJmUrbiIwzhbg6SSTM4rLGiAXK6S2N8FWFq2YT6O4zSOlmf++1QJX69G8kRLBck+VbQ2eQmeIoBExM/gWBnTrh5/R4biZxNgZhE5iUUFkiYnjuAcHlaG2tBBiEcutPkgH9L9u9iBhUOQ+8VIbfrPyhD8aQKkrHeIWxMPsK00Mds1qKRN/G0x2KSLh7coXc/81uMFNpeSd3dsSxKLe98Pr6k7+QaaRGKsOR3iyXxdk/hwBfewpWs8Gr4l89X40PZfvYKbA/f1hHRm3tTkfYgD+0TE4+bWzJsAOcxeI0dEV+RS2dVHfLgHeY9zb5fshiG/iqPPD876PqU23QfTcaA6z1cV4MvqeoyB4oUffUTra/peOOPqTq6fcsA/agpUGdTmolkAAAAASUVORK5CYII="/>
+            <h3>pasties</h3>
+            </div>
+          
+          </section>
+          
+      <section id="menu">
+
+
+      <div class="coffes" >
+        <div class="coffe">
+          <div class="hot">
+</div>
+ 
+
+          <div class="bottom">
+            <h3>HoT Chocolate</h3>
+            <h4>350 DA</h4>
+            <div class="buttons">
+              <button class="buy-btn">Buy Now</button>
+              <button class="heart-btn"><i class="far fa-heart"></i></button>
+          </div>
+          </div>
+          </div>
+          
+          <div class="coffe">
+            <div class="cappuccino">
+  
+            </div>
+            <div class="bottom">
+              <h3>Cappuccino</h3>
+              <h4>600 DA</h4>
+              <div class="buttons">
+                <button class="buy-btn">Buy Now</button>
+                <button class="heart-btn"><i class="far fa-heart"></i></button>
+            </div>
+            </div>
+            </div>
+            
+            <div class="coffe">
+              <div class="affogato">
+    
+              </div>
+              <div class="bottom">
+                <h3>Affogato</h3>
+                <h4>650DA</h4>
+                <div class="buttons">
+                  <button class="buy-btn">Buy Now</button>
+                  <button class="heart-btn"><i class="far fa-heart"></i></button>
+              </div>
+              </div>
+            </div>
+    
+              <div class="coffe">
+                <div class="lattemocha">
+          </div>       
+          <div class="bottom">
+            <h3>Latte Mocha</h3>
+            <h4>650DA</h4>
+            <div class="buttons">
+              <button class="buy-btn">Buy Now</button>
+              <button class="heart-btn"><i class="far fa-heart"></i></button>
+          </div>
+          </div>
+          </div>
+          <div class="coffe">
+            <div class="espresso">
+      </div>       
+      <div class="bottom">
+        <h3>Espresso Arabica</h3>
+        <h4>350DA</h4>
+        <div class="buttons">
+          <button class="buy-btn">Buy Now</button>
+          <button class="heart-btn"><i class="far fa-heart"></i></button>
       </div>
-       <div class="elite-card">
-       <div class="elite-icon">
-       <i class="fas fa-pencil-ruler"></i>
       </div>
-                <h3 class="elite-card-title">Web Design</h3>
-                <p class="elite-card-desc">
-                    Custom website designs that blend aesthetics with functionality.
-                    I create intuitive interfaces that reflect your brand identity and engage your audience.
-                </p>
-                <a href="#" class="elite-link">
-                    See portfolio <i class="fas fa-arrow-right"></i>
-                </a>
-            </div>
-    </section>
+      </div>
 
-    <section id="technologie">
+      <div class="coffe">
+        <div class="americano">
+  </div>       
+  <div class="bottom">
+    <h3>Café Americano</h3>
+    <h4>350DA</h4>
+    <div class="buttons">
+      <button class="buy-btn">Buy Now</button>
+      <button class="heart-btn"><i class="far fa-heart"></i></button>
+  </div>
+  </div>
+  </div>
+  <div class="coffe">
+    <div class="turque">
+  </div>       
+  <div class="bottom">
+  <h3>Café Turque</h3>
+  <h4>250DA</h4>
+  <div class="buttons">
+    <button class="buy-btn">Buy Now</button>
+    <button class="heart-btn"><i class="far fa-heart"></i></button>
+</div>
+  </div>
+  </div>
+  <div class="coffe">
+    <div class="conpanna">
+</div>       
+<div class="bottom">
+<h3>Espresso Con Panna</h3>
+<h4>350DA</h4>
+<div class="buttons">
+  <button class="buy-btn">Buy Now</button>
+  <button class="heart-btn"><i class="far fa-heart"></i></button>
+</div>
+</div>
+</div>
+ </div>
+</div>
+</section>
+<section id="a propos">
+<div class="ahlam" >
 
-        <div id="tech-stack" class="tab-content">
-            <h1>Tech Stack</h1>
-            <div class="tech-stack-container">
-                <img src="/OIP-removebg-preview.png" width="200px" alt="html">
-                <img src="/3920310-middle-removebg-preview (1).png" width="140px" alt="css">
-                <img src="/3d-bootstrap-programming-framework-logo-free-removebg-preview.png" width="160px"
-                    alt="Bootstrap">
-                <img src="/java.png" width="160px" alt="Java">
-                <img src="/Tailwind_CSS_Logo.svg_GkNDLAs-removebg-preview.png" width="220px" alt="Tailwind CSS">
+  <div class="left">
+    
+     <video controls width="600" height="400" autoplay.loop.muted.poster="imgs/home/cover-speed-website.png">
+      <source src="video.mp4" type="video/mp4">
+  
+     </video>
+  </div> 
+  
+  <div class="right">
+   <h1>Comment préparer un café filtre parfait</h1>
+
+    <ol>
+      <li> <strong>1.le filtre</strong></li>
+       <p> le filtre avec de l'eau chaude pour éliminer tout gout de papier et jetez l'eau utilisée.</p>
+      <li><strong>2.la balance</strong> </li>
+        <p>votre récipient sur la balance et tarer la balance à zéro.</p>
+        <li><strong>3.Moudre le café</strong></li>
+        <p>Utilisez une mouture grossière. Pour une tasse de 16 oz (environ 500 ml), utilisez 30 grammes de café.</p>
+        <li><strong>4.Faire fleurir le café</strong></li>
+        <p>Versez une petite quantité d'eau chaude (environ 50-60 ml) en un léger zigzag pour mouiller le café et laissez-le fleurir pendant 30 secondes.</p>
+        <li><strong>6.l'eau</strong> </li>
+        <p>Après la période de fleurissement, versez lentement de l'eau jusqu'à atteindre 250 grammes. Pausez pendant 30 secondes, puis continuez à verser jusqu'à atteindre 500 grammes.</p>
+        <li><strong>7.Mélanger</strong></li>
+        <p>Donnez un bon tourbillon à votre récipient pour aérer le café et assurer une extraction uniforme.</p>
+        <li><strong>8.Déguster</strong></li>
+        <p>Vous devriez obtenir une tasse de 16 oz (environ 500 ml) de café aromatique et lisse.</p>
+    </li>
+    </ol></section>
+</div>
+  </div>
+
+
+ <section id="gallery">
+<div class="Aboutus">
+<div id="box" class="box">
+  <h2 id="back"> < </h2>
+  <h2 id="next"> > </h2>
+</div>
+<div class="right">
+  <h1>About Us</h1>
+  <h2>Why CHEMEX is the Best Coffee Shop Ever</h2>
+  <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Molestiae et natus eos nostrum? Deleniti nobis laudantium, magni minus nihil minima, rerum ducimus dignissimos explicabo porro dolore vero laborum veniam iure!</p>
+</div>
+</div>
+</section>
+
+
+<section id="ourservices" class="ourservices">
+  <h2>Our Services</h2>
+  <div class="services-container">
+      <div class="service-card">
+          <img src="/Coffe/img20.jpg" alt="Buy Coffee (Beans)">
+          <h3>Buy Coffee (Beans)</h3>
+          <p>Enjoy freshly brewed coffee made from the finest beans, carefully crafted to perfection.</p>
+      </div>
+
+      <div class="service-card">
+          <img src="35.jpg" alt="Reserve a Place">
+          <h3>Reserve a Place</h3>
+          <p>Book your favorite spot in our cozy café for a relaxing time or a special event.</p>
+      </div>
+
+      <div class="service-card">
+          <img src="36jpg.jpg" alt="Coffee Delivery">
+          <h3>Coffee Delivery</h3>
+          <p>Order your favorite coffee and have it delivered to your doorstep, hot and ready to enjoy.</p>
+      </div>
+  </div>
+</section>
+
+
+<section id="contact"> 
+<div class="ha">
+  <section class="contact-section">
+    <h2>Contact Us</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+
+    <div class="contact-container">
+        <div class="contact-info">
+            <h3>Get In Touch</h3>
+            <p>Lorem ipsum, dolor sit amet consectetur.</p>
+            <p><strong>📍 Oran</strong></p>
+            <p><strong>📞 +223 799360463</strong></p>
+            <p><strong>📧 ouikeneahlam@gmail.com</strong></p>
+            <div class="social-icons">
+                <a href="#">🔵</a>
+                <a href="#">📷</a>
+                <a href="#">🐦</a>
             </div>
         </div>
-    </section>
 
-    <section id="portfolio" class="portfolio">
-        <h2>Mes Projets</h2>
-
-        <div class="projects-container">
-            <div class="project-card">
-                <img src="/capture2.png" alt="Coffe Shop">
-                <h3>Coffe Shop</h3>
-                <p>HTML ,CSS ,Js</p>
-                <a href="/Coffe/index.html" target="_blank">Voir le projet</a>
-            </div>
-            <div class="project-card">
-                <img src="/capture3.png" alt="Annimation">
-                <h3>Animation</h3>
-                <p>HTML ,CSS</p>
-                <a href="/TP devweb/index.html" target="_blank">Voir le projet</a>
-            </div>
-            <div class="project-card">
-                <img src="/capture1.jpg.png" alt="Cat Gallery">
-                <h3>Cat Gallery</h3>
-                <p>HTML ,CSS</p>
-                <a href="/Projet.js/" target="_blank">Voir le projet</a>
-            </div>
-            <div class="project-card">
-                <img src="/capture4.png" alt="Paiement">
-                <h3>Paiement</h3>
-                <p>HTML ,CSS</p>
-                <a href="/WorkShop/index.html" target="_blank">Voir le projet</a>
-            </div>
-
-
-        </div>
-    </section>
-     <section id="contact">
-           <div class="contact-container">
-            <div class="contact-left">
-                <h1 class="contact-title">DO YOU HAVE A PROJECT TO DISCUSS?</h1>
-                <div class="contact-info">
-                    <h2 class="info-title">CONTACT</h2>
-                    <p class="info-text">ouikeneahlam@gmail.com</p>
-                </div> 
-                <div class="social-media">
-                    <h2 class="info-title">SOCIAL MEDIA</h2>
-                    <div class="social-links">
-                        <a href="https://www.instagram.com/ahlam_ouikene/" target="_blank"><i
-                                class="fab fa-instagram"></i></a>
-                        <a href="#" target="_blank"><i class="fab fa-github"></i></a>
-                    </div>
-                </div>
-            </div>
-            <div class="contact-form">
-                <h2 class="form-title">CONTACT FORM</h2>
-                <form>
-                    <div class="form-group">
-                        <label for="name">Name</label>
-                        <input type="text" id="name" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="email">Email</label>
-                        <input type="email" id="email" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="message">Message</label>
-                        <textarea id="message" required></textarea>
-                    </div>
-                    <button type="submit" class="submit-btn">SEND</button>
-                </form>
-            </div>
-        </div>
-    </section>
-  </body>
+        <form>
+            <input type="text" placeholder="Name*" required>
+            <input type="email" placeholder="Email*" required>
+            <textarea placeholder="Message*" required></textarea>
+            <button type="submit">SUBMIT</button>
+        </form>
+    </div>
+</section>
+</div>
+<script src="js.js"></script>
+ 
 </html>
+
+
+
+ 
+
+    
+
+    <footer>
+        <p>© 2025 OUikene Ahlem. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
+
+ 
+ 
+
+  
+
+ 
+ 
+
+    
+          
+ 
+                
+
+
+
+
+
+
+    
+       
+  
+
+         
+          
+    
+      
+
+
+      
+           
+
+
+
+      
+      
+
+
+ 
+
+
+
+                  
+ 
+ 
+  
