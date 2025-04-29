@@ -1,0 +1,578 @@
+*{
+    padding: 0;
+    margin: 0;
+     
+}
+body{
+    font-family: 'Arial', sans-serif;
+}
+li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+    color: rgb(0, 0, 0);}
+.list ul{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right:50px ;
+    font-size: 20px;
+}
+
+.center{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    height: 400px;
+    
+}
+.navbar .logo img{
+    margin-left: 50px;
+ 
+
+}
+.navbar .list a{
+    color: rgb(0, 0, 0);
+}
+.navbar .list a:hover{
+    color:#502000;
+
+}
+.center{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 200px;
+    padding: 20px;
+    
+}
+.center .left h1{
+   font-family: 'libre Baskerville';
+   color: rgb(0, 0, 0);
+   margin-left:200px;
+   height: 190px;
+   font-size: 2rem;
+   opacity: 0;
+   transform: translateY(50px);
+   animation: fonduMontee 4s ease-in-out infinite alternate;
+}
+@keyframes fonduMontee {
+    from {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+.center .right img{
+    margin-right: 50px;
+    border-radius: 10px;
+    width: 300px;
+    height: auto;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+    display: block;
+}
+
+.image-style{
+    transition: transform 0.3 ease-in-out;
+}
+.image-style:hover{
+    transform: scale(1.1);
+}
+.blur-background{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+    z-index: -1;
+
+}
+.blur-background{
+    background: url('/Coffe/photo_2025-03-06_23-04-53.jpg') no-repeat center/cover;
+    filter: blur(5px);
+}
+.form-container{
+    height: 400px;
+    padding: 12px;
+    background: #e7e7e7;
+    border-radius: 10px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    border-radius: 5px;
+    margin-top: 120px;
+    
+}
+a{
+    color: black;
+    margin-left: 100px;
+}
+h1{
+    margin-top: 60px;
+   margin-left: 500px;
+
+
+}
+.coffe{
+    margin-top: 20px;
+    margin-left: 15px;
+    border: 1px solid black;
+    width: 300px;
+    height: 400px;
+   
+}
+.coffe:hover{
+    transform: translateY(-5px);
+}
+ .coffes{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+ }
+.coffe .hot{
+    background-image: url(./photo_2025-03-07_03-13-58.jpg);
+    height: 80%;
+    background-position: center;
+    background-size: cover;
+}
+.coffe .cappuccino{
+    background-image: url(./Affogato.jpg);
+    height: 80%;
+    background-position: center;
+    background-size: cover;
+}
+.coffe .affogato{
+    background-image: url(./7.jpg);
+    height: 80%;
+    background-position: center;
+    background-size: cover;
+}
+.coffe .lattemocha{
+    background-image: url(./8.jpg);
+    height: 80%;
+    background-position: center;
+    background-size: cover;
+}
+.coffe .espresso{
+    background-image: url(./9.jpg);
+    height: 80%;
+    background-position: center;
+    background-size: cover;
+}
+.coffe .americano{
+    background-image: url(./10.jpg);
+    height: 80%;
+    background-position: center;
+    background-size: cover;
+}
+.coffe .turque{
+    background-image: url(./11.jpg);
+    height: 80%;
+    background-position: center;
+    background-size: cover;
+}
+.coffe .conpanna{
+    background-image: url(./12.jpg);
+    height: 80%;
+    background-position: center;
+    background-size: cover;
+}
+.coffe .bottom{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.coffe .bottom a{
+    background-color: rgb(0, 0, 0);
+    color: white;
+    width: 20%;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-right: 100px;
+}
+.coffe .bottom a:hover{
+    background-color: #502000;
+}
+.ahlam .left{
+    margin-top: 100px;
+}
+.ahlam{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+}
+
+
+.right h1 {
+    font-size: 2.5rem;
+    color: #444444;
+    margin-left: -50px;
+    margin-bottom:auto;
+    text-align: center;
+     
+}
+.right h2{
+    margin-top: 80px;
+}
+.right p{
+    margin-top: 15px;
+}
+ 
+
+ol {
+    list-style-type: decimal;
+    margin-left: 40px;
+    margin-bottom: 20px;
+    
+}
+
+li {
+    margin-bottom: 15px;
+}
+
+li strong {
+    font-size: 1.2rem;
+    color: #555;
+}
+
+p {
+    font-size: 1rem;
+    color: #666;
+    margin-top: 5px;
+}
+
+/* Style pour le conteneur principal */
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Style pour les étapes spécifiques */
+.step {
+    margin-bottom: 20px;
+}
+
+.step:last-child {
+    margin-bottom: 0;
+}
+ /* Conteneur de la vidéo */
+.left.video {
+    position: relative;
+    width: 100%;
+    max-width: 680px; /* Largeur maximale de la vidéo */
+    margin: 0 auto; /* Centrer la vidéo */
+    border-radius: 10px; /* Coins arrondis */
+    overflow: hidden; /* Masquer les débordements */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Ombre portée */
+}
+
+/* Style de la vidéo */
+.left.video{
+    width: 100%; /* La vidéo occupe toute la largeur du conteneur */
+    height: auto; /* Hauteur ajustée automatiquement */
+    display: block; /* Éviter les espaces indésirables */
+    border-radius: 10px; /* Coins arrondis */
+}
+ .Aboutus{
+    background-color: #e7e7e7;
+    display: flex;
+    align-items:center ;
+    justify-content: center;
+     
+
+}
+ .Aboutusbox{
+    height: 100px;
+   
+ }
+  
+ 
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 8px 12px;
+}
+
+nav ul li a.active {
+    background-color: #000000;
+    border-radius: 5px;
+}
+
+/* Section Contact */
+.contact-section {
+    background:#502000;
+    padding: 50px 20px;
+    margin: 30px auto;
+    width: 80%;
+    max-width: 800px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-top: px;
+}
+
+.contact-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 50px;
+    
+}
+
+.contact-info {
+    text-align: left;
+    max-width: 40%;
+}
+
+form {
+    max-width: 50%;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+textarea {
+    height: 100px;
+}
+
+button {
+    background-color: #000000;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.2);
+}
+
+button:hover {
+    background-color: #502000;
+}
+
+/* Icônes sociales */
+.social-icons a {
+    font-size: 20px;
+    margin: 5px;
+    text-decoration: none;
+}
+  .icon {
+    background: #ccc;
+      
+    border-radius: 10px;
+               
+  }
+
+
+
+  /* Style de base */
+  .search{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 170px;
+   
+   
+
+  }
+ 
+  .search-box {
+    display: flex;
+    width: 600px;
+    height: 50px;
+    border: 1px solid #ddd;;
+    border-radius: 30px;
+    overflow: hidden;
+    font-family: sans-serif;
+    
+}
+
+.search-box input {
+    width: 100%;
+    font-size: 16px;
+    border: none;
+}
+.search-box input:hover{
+    border: none;
+}
+
+.search-box button {
+    background-color: #723C2D;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 0 30px 30px 0;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  .menu-items-container {
+    max-width:70%;
+    margin-left: 150px;
+    padding: 2rem;
+    background: #e7e7e7;
+    border-radius: 10px;
+    margin-top: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+
+  }
+  
+  .menu-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-width: 120px;
+    gap: 0.5rem;
+  }
+  
+  .menu-item img {
+    width: 20px;
+    object-fit: contain;
+    filter: drop-shadow(0 2px 4px rgba(0,0,0,0.1));
+  }
+  
+  .menu-item h3 {
+    font-size: 1rem;
+    color: #5a3e2b;
+    font-weight: 600;
+    text-transform: capitalize;
+ }
+.buttons {
+    display: flex;
+    gap: 10px;
+}
+
+.buy-btn {
+    background-color: #000000;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    flex: 1;
+    font-weight: bold;
+    width:200px;
+    transition: 0.3s;
+}
+
+.buy-btn:hover {
+    background-color: #8B4513;
+}
+
+.heart-btn {
+    background: white;
+    color: #000000;
+    border: 1px solid #ddd;
+    width: 40px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.heart-btn:hover {
+    color: red;
+    border-color: red;
+}
+
+.heart-btn .fas {
+    display: none;
+    color: red;
+}
+
+/* Pour changer l'icône quand on clique (avec CSS seul) */
+.heart-btn:active .far {
+    display: none;
+}
+
+.heart-btn:active .fas {
+    display: inline;
+}
+ .ourservices{
+    text-align: center;
+    padding: 40px 20px;
+    color: #000000;
+ }
+ .ourservices h2{
+    font-size: 3rem;
+ }
+
+.services-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    color: #000000;
+    margin-top: 30px;
+}
+
+.service-card {
+    background-color: #5a2d0c;
+    color: black;
+    border-radius: 10px;
+    margin: 15px;
+    padding: 20px;
+    width: 280px;
+    height: 480px;
+    border-radius: 5px;
+    transition: transform 0.3s;
+}
+
+
+.service-card img{
+    width: 240px;
+    height: 400px;
+    border-radius: 5px;
+    
+
+}
+
+
+
+.service-card:hover {
+    transform: translateY(-10px);
+    background-color: #8b4513;
+}
+
+.service-card p{
+    color: white;
+}
+
+ 
+  
